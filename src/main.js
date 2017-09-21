@@ -7,8 +7,11 @@ import router from './router'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+
+Vue.config.movues = process.env
+
 new Vue({
-  el: '#app',
+  el: '#root',
   router,
   template: '<App/>',
   components: { App }
